@@ -1,0 +1,15 @@
+{
+  "name": "starry",
+  "collaborators": [
+    "imxood <imxood@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "starry_bg.wasm",
+    "starry.js",
+    "starry.d.ts"
+  ],
+  "module": "starry.js",
+  "types": "starry.d.ts",
+  "sideEffects": false
+}

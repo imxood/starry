@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>egui app</title>
+    <style>
+        html,
+        body,
+        #my_canvas {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="my_canvas"></canvas>
+    <script type="module">
+        import init from "./pkg/starry.js";
+        let wasm = await init();
+        console.log("wasm: ", wasm);
+        await wasm.wasm_start();
+    </script>
+</body>
+
+</html>
