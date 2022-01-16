@@ -11,7 +11,7 @@ async fn main() -> Result<(), std::io::Error> {
         "/",
         StaticFilesEndpoint::new("./site").show_files_listing(),
     );
-    Server::new(TcpListener::bind("127.0.0.1:3000"))
+    Server::new(TcpListener::bind("0.0.0.0:8080"))
         .run(app)
         .await
 }
