@@ -1,0 +1,11 @@
+[package]
+name = "starry-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+poem = { version = "1.2.34", features = ["static-files"] }
+tokio = { version = "1.15.0", features = ["rt-multi-thread", "macros"] }
+tracing-subscriber = "0.3.6"
